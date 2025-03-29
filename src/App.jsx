@@ -13,8 +13,8 @@ function App() {
   // 2 = account page
 
   return (
-    <div className="flex flex-col h-full">
-      <div className="flex-grow bg-gray-100">
+    <div className="flex flex-col h-full overflow-hidden">
+      <div className="flex-grow bg-gray-100 overflow-y-auto overflow-x-hidden">
         {currPage === 0 ? (
           <HomePage />
         ) : currPage === 1 ? (
@@ -23,7 +23,7 @@ function App() {
           <AccountPage />
         )}
       </div>
-      <div className="flex justify-evenly items-center h-16">
+      <div className="flex justify-evenly items-center h-14 flex-shrink-0 border-t-[1px] border-t-gray-200">
         <div onClick={() => setCurrPage(0)} className="h-12 w-12 p-2">
           <HomeIcon fill={currPage === 0} />
         </div>
