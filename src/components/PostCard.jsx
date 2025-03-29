@@ -12,7 +12,7 @@ const PostCard = ({ post }) => {
     <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden border border-gray-200 bg-white">
       <div className="flex items-center p-4">
         <img
-          src={post.userProfileUrl || "https://via.placeholder.com/40"}
+          src={post.userProfileUrl}
           alt="Profile"
           className="w-10 h-10 rounded-full object-cover"
         />
