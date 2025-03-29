@@ -32,7 +32,7 @@ function App() {
       })
     );
   }, []);
-  console.log("api data", posts);
+
   return (
     <div className="flex flex-col h-full overflow-hidden">
       <div
