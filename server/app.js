@@ -1,28 +1,35 @@
-const express = require('express');
+const express = require("express");
 
 const app = express();
 const PORT = 3000;
 const posts = require("../data/posts.json");
 const stories = require("../data/stories.json");
-
+const reals = require("../data/reals.json");
 
 const cors = require("cors");
-app.use(cors()); 
+app.use(cors());
 
-app.use(cors({
-  origin: "http://localhost:5173"
-}));
+app.use(
+  cors({
+    origin: "http://localhost:5173",
+  })
+);
 
 app.get("/posts", (req, res) => {
-    res.setHeader("Content-Type", "application/json");
-    res.json(posts);
-  });
+  res.setHeader("Content-Type", "application/json");
+  res.json(posts);
+});
 
 app.get("/stories", (req, res) => {
-    res.setHeader("Content-Type", "application/json");
-    res.json(stories);
-  });
+  res.setHeader("Content-Type", "application/json");
+  res.json(stories);
+});
+
+app.get("/reals", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.json(reals);
+});
 
 app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
