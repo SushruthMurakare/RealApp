@@ -18,7 +18,6 @@ export default function RealsPage() {
       {reals?.reals.map((real) => (
         <video
           key={real.videoUrl}
-          autoPlay
           className="w-full h-[calc(100vh-56px)] object-cover"
         >
           <source src={"../../" + real.videoUrl} />
@@ -27,7 +26,6 @@ export default function RealsPage() {
       {reals?.reals.map((real) => (
         <video
           key={real.videoUrl}
-          autoPlay
           className="w-full h-[calc(100vh-56px)] object-cover"
         >
           <source src={"../../" + real.videoUrl} />
@@ -36,7 +34,6 @@ export default function RealsPage() {
       {reals?.reals.map((real) => (
         <video
           key={real.videoUrl}
-          autoPlay
           className="w-full h-[calc(100vh-56px)] object-cover"
         >
           <source src={"../../" + real.videoUrl} />
@@ -45,7 +42,6 @@ export default function RealsPage() {
       {reals?.reals.map((real) => (
         <video
           key={real.videoUrl}
-          autoPlay
           className="w-full h-[calc(100vh-56px)] object-cover"
         >
           <source src={"../../" + real.videoUrl} />
