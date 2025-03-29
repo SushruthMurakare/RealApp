@@ -35,10 +35,7 @@ function App() {
 
   return (
     <div className="flex flex-col h-full overflow-hidden">
-      <div
-        id="main-scroll"
-        className="flex-grow bg-gray-100 overflow-y-auto overflow-x-hidden"
-      >
+      <div className="flex-grow bg-gray-100 overflow-y-auto overflow-x-hidden">
         {posts === null ? (
           <p className="text-center p-4">Loading...</p>
         ) : currPage === 0 ? (

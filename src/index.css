@@ -6,4 +6,12 @@
   #root {
     @apply h-screen overflow-hidden overscroll-none;
   }
+
+  #reals-scroll::-webkit-scrollbar {
+    @apply hidden;
+  }
+  #reals-scroll {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
