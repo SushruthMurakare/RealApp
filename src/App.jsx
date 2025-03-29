@@ -3,8 +3,11 @@ import HomePage from "./components/HomePage";
 import HomeIcon from "./components/icons/HomeIcon";
 import LightBulbIcon from "./components/icons/LightBulbIcon";
 import AccountIcon from "./components/icons/AccountIcon";
+import MessageIcon from "./components/icons/MessageIcon";
 import RealsPage from "./components/RealsPage";
 import AccountPage from "./components/AccountPage";
+import MessagePage from "./components/MessagePage";
+
 
 function App() {
   const [currPage, setCurrPage] = useState(0);
@@ -19,9 +22,9 @@ function App() {
           <HomePage />
         ) : currPage === 1 ? (
           <RealsPage />
-        ) : (
+        ) : currPage === 2 ? (
           <AccountPage />
-        )}
+        ) : <MessagePage/>}
       </div>
       <div className="flex justify-evenly items-center h-14 flex-shrink-0 border-t-[1px] border-t-gray-200">
         <div onClick={() => setCurrPage(0)} className="h-12 w-12 p-2">
@@ -32,6 +35,9 @@ function App() {
         </div>
         <div onClick={() => setCurrPage(2)} className="h-12 w-12 p-2">
           <AccountIcon fill={currPage === 2} />
+        </div>
+        <div onClick={() => setCurrPage(3)} className="h-12 w-12 p-2">
+          <MessageIcon fill={currPage === 3} />
         </div>
       </div>
     </div>
