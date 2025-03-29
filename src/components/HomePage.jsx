@@ -1,4 +1,4 @@
-import PostCard from "./PostCard";
+import PostCard from "./Postcard";
 import postsData from "../../data/posts.json";
 
 export default function HomePage() {
