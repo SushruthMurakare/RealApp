@@ -7,6 +7,7 @@ import MessageIcon from "./components/icons/MessageIcon";
 import RealsPage from "./components/RealsPage";
 import AccountPage from "./components/AccountPage";
 import MessagePage from "./components/MessagePage";
+import viewGoal from "./functions/viewGoal";
 
 function App() {
   const [currPage, setCurrPage] = useState(0);
@@ -16,6 +17,13 @@ function App() {
   // 0 = home page
   // 1 = reals page
   // 2 = account page
+  // 2.5 = account page showing goal
+  // 3 = messaging page
+  console.log(currPage);
+
+  viewGoal.f = () => {
+    setCurrPage(2.5);
+  };
 
   useEffect(() => {
     fetch("http://localhost:3000/posts").then((response) =>
@@ -43,7 +51,9 @@ function App() {
         ) : currPage === 1 ? (
           <RealsPage />
         ) : currPage === 2 ? (
-          <AccountPage />
+          <AccountPage setCurrPage={setCurrPage} />
+        ) : currPage === 2.5 ? (
+          <AccountPage goal setCurrPage={setCurrPage} />
         ) : (
           <MessagePage />
         )}
@@ -56,7 +66,7 @@ function App() {
           <LightBulbIcon fill={currPage === 1} />
         </div>
         <div onClick={() => setCurrPage(2)} className="h-12 w-12 p-2">
-          <AccountIcon fill={currPage === 2} />
+          <AccountIcon fill={currPage === 2 || currPage === 2.5} />
         </div>
         <div onClick={() => setCurrPage(3)} className="h-12 w-12 p-2">
           <MessageIcon fill={currPage === 3} />

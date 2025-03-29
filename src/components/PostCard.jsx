@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import { Heart, MessageCircle, ThumbsDown } from "lucide-react";
+import viewGoal from "../functions/viewGoal";
 
 const PostCard = ({ post }) => {
   const [showPopup, setShowPopup] = useState(false);
@@ -10,22 +11,38 @@ const PostCard = ({ post }) => {
   };
   return (
     <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden border border-gray-200 bg-white">
-      <div className="flex items-center p-4">
-        <img
-          src={post.userProfileUrl}
-          alt="Profile"
-          className="w-10 h-10 rounded-full object-cover"
-        />
-        <h2 className="ml-2 text-lg font-semibold">{post.username}</h2>
+      <div className="p-3">
+        <div className="flex items-center mb-1">
+          <img
+            src={post.userProfileUrl}
+            alt="Profile"
+            className="w-9 h-9 rounded-full object-cover"
+          />
+          <h2 className="ml-2 text-sm font-semibold">{post.username}</h2>
+          {post.type === "timeline" && (
+            <p className="text-sm font-light ml-1">
+              made progress on{" "}
+              <a
+                onClick={() => viewGoal.f()}
+                className="text-blue-700 underline"
+              >
+                a goal!
+              </a>
+            </p>
+          )}
+        </div>
+        {post.type === "timeline" && (
+          <input type="range" value="70" className="w-full timeline"></input>
+        )}
+        <p className="text-gray-800 text-sm mb-2">{post.caption}</p>
+        {post.type === "regular" && (
+          <div className="p-1 bg-blue-500 text-white rounded-lg inline-block">
+            <a href="https://www.instagram.com/p/DHwCk7jRSyp/?utm_source=ig_web_copy_link">
+              Actual Post
+            </a>
+          </div>
+        )}
       </div>
-
-      <div className="p-4">
-        <p className="text-gray-800">{post.caption}</p>
-      </div>
-      <div className="m-2 p-1 bg-blue-500 text-white rounded-lg inline-block">
-        <a href="https://www.instagram.com/p/DHwCk7jRSyp/?utm_source=ig_web_copy_link">Actual Post</a>
-      </div>
-
       <img
         src={post.imageUrl}
         alt="Post"
@@ -38,7 +55,7 @@ const PostCard = ({ post }) => {
           <span>{post.likesCount} Likes</span>
         </div>
         <div className="flex items-center gap-2">
-          <ThumbsDown className="w-5 h-5 text-red-500"  />
+          <ThumbsDown className="w-5 h-5 text-red-500" />
           <span>{post.likesCount} Fake</span>
         </div>
         <div className="flex items-center gap-2">
@@ -46,7 +63,10 @@ const PostCard = ({ post }) => {
           <span>{post.comments.length} Comments</span>
           {showPopup && (
             <div className="absolute left-0 bottom-10 bg-white p-2 rounded-lg shadow-lg w-40 text-center">
-              <ul onClick={()=>setShowPopup(!showPopup)} className="space-y-2">
+              <ul
+                onClick={() => setShowPopup(!showPopup)}
+                className="space-y-2"
+              >
                 <li className="cursor-pointer text-gray-600 hover:text-gray-900">
                   Respect
                 </li>

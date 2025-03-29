@@ -11,8 +11,6 @@ export default function RealsPage() {
     );
   }, []);
 
-  const scrollDiv = document.getElementById("main-scroll");
-
   return (
     <div id="reals-scroll" className="h-[calc(100vh-56px)] overflow-y-auto">
       {reals?.reals.map((real) => (
