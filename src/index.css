@@ -4,6 +4,6 @@
   html,
   body,
   #root {
-    @apply h-full;
+    @apply h-screen overflow-hidden overscroll-none;
   }
 }
