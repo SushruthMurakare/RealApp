@@ -2,13 +2,13 @@
   "posts": [
     {
       "userId": 1,
-      "username": "John_Doe",
+      "username": "Kevin_Cooper",
         "profileImage" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
       "imageUrl": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
       "caption": "The beginning of my fitness journey. It's not easy, but it's worth it. Every rep counts!",
       "realScore": 230,
         "actualPost" :true,
-      "userProfileUrl": "data/profiles/John_Doe.jpg",
+      "userProfileUrl": "data/profiles/Kevin_Cooper.jpg",
       "comments": [
         {
           "commenter": "Alice",
