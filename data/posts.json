@@ -1,170 +1,180 @@
 {
-    "posts": [
-      {
-        "userId": 1,
-        "username": "john_doe",
-        "imageUrl": "https://via.placeholder.com/300x300?text=Fitness+Journey",
-        "caption": "The beginning of my fitness journey. It's not easy, but it's worth it. Every rep counts!",
-        "realScore": 230,
-        "comments": [
-          {
-            "commenter": "Alice",
-            "comment": "You’re doing great! Keep pushing yourself! 💪"
-          },
-          {
-            "commenter": "Bob",
-            "comment": "This is so motivating, I need to start working out too!"
-          }
-        ]
-      },
-      {
-        "userId": 2,
-        "username": "emma_williams",
-        "imageUrl": "https://via.placeholder.com/300x300?text=Weight+Loss+Journey",
-        "caption": "Started my weight loss journey last year, and it’s been a rollercoaster. Small steps every day make a huge difference. #TransformationTuesday",
-        "realScore": 350,
-        "comments": [
-          {
-            "commenter": "Charlie",
-            "comment": "You look amazing! Keep it up, it’s all worth it! 🏋️‍♀️"
-          },
-          {
-            "commenter": "Daisy",
-            "comment": "You’ve inspired me to take my first steps towards a healthier lifestyle! 🌱"
-          }
-        ]
-      },
-      {
-        "userId": 3,
-        "username": "sophia_lee",
-        "imageUrl": "https://via.placeholder.com/300x300?text=Buying+My+First+Home",
-        "caption": "The process of buying my first home. It was stressful, but I’m so proud of how far I’ve come. Can't wait to make this place my own! #HomeSweetHome",
-        "realScore": 450,
-        "comments": [
-          {
-            "commenter": "Eva",
-            "comment": "Congrats! Buying your first home is such an accomplishment 🏡"
-          },
-          {
-            "commenter": "Lily",
-            "comment": "I can’t wait to see how you decorate it! 💕"
-          }
-        ]
-      },
-      {
-        "userId": 4,
-        "username": "lucas_martin",
-        "imageUrl": "https://via.placeholder.com/300x300?text=My+Best+Friends+Journey",
-        "caption": "This is how I met my best friends. We’ve been through thick and thin together, and I couldn’t imagine life without them. #FriendshipGoals",
-        "realScore": 500,
-        "comments": [
-          {
-            "commenter": "John",
-            "comment": "True friendship is priceless. So glad you found your tribe! 🙌"
-          },
-          {
-            "commenter": "Olivia",
-            "comment": "Friendship like this is what life is all about! ❤️"
-          }
-        ]
-      },
-      {
-        "userId": 5,
-        "username": "mia_johnson",
-        "imageUrl": "https://via.placeholder.com/300x300?text=New+Car+Journey",
-        "caption": "From dreaming to reality – the journey of buying my first car. It took hard work, sacrifice, and persistence, but I did it! 🚗💨 #DreamCar",
-        "realScore": 380,
-        "comments": [
-          {
-            "commenter": "Tom",
-            "comment": "This is incredible! I can’t wait to get mine one day! 🙌"
-          },
-          {
-            "commenter": "Emma",
-            "comment": "So inspiring, congrats on your new car! 🎉"
-          }
-        ]
-      },
-      {
-        "userId": 6,
-        "username": "ava_smith",
-        "imageUrl": "https://via.placeholder.com/300x300?text=Weight+Loss+Transformation",
-        "caption": "Transformation isn’t just physical; it’s mental too. I’ve changed my mindset as much as my body. It’s about becoming the best version of myself. #MindOverMatter",
-        "realScore": 400,
-        "comments": [
-          {
-            "commenter": "Sophia",
-            "comment": "You’ve been an inspiration to me on my own journey! 💪"
-          },
-          {
-            "commenter": "Mia",
-            "comment": "It’s all about the mental strength. Keep it up, you’re doing amazing! ✨"
-          }
-        ]
-      },
-      {
-        "userId": 7,
-        "username": "oliver_brown",
-        "imageUrl": "https://via.placeholder.com/300x300?text=New+Job+Adventure",
-        "caption": "Starting a new chapter in my career. It wasn’t easy to leave my comfort zone, but I’m so excited for what’s ahead! #NewBeginnings",
-        "realScore": 320,
-        "comments": [
-          {
-            "commenter": "Sophia",
-            "comment": "Proud of you for taking the leap! You’ve got this! 🚀"
-          },
-          {
-            "commenter": "Lily",
-            "comment": "Change is hard, but it’s so worth it in the end! Good luck! 🍀"
-          }
-        ]
-      },
-      {
-        "userId": 8,
-        "username": "sophia_taylor",
-        "imageUrl": "https://via.placeholder.com/300x300?text=Graduation+Journey",
-        "caption": "Graduation day! The hard work, the late nights, and all the sacrifices were so worth it. Here’s to new adventures and the future! 🎓 #GraduationVibes",
-        "realScore": 550,
-        "comments": [
-          {
-            "commenter": "Olivia",
-            "comment": "You did it! So proud of you! 🎉"
-          },
-          {
-            "commenter": "Charlie",
-            "comment": "This is just the beginning! I can’t wait to see what you do next! 🚀"
-          }
-        ]
-      },
-      {
-        "userId": 9,
-        "username": "henry_davis",
-        "imageUrl": "https://via.placeholder.com/300x300?text=Fitness+Transformation",
-        "caption": "This fitness journey has been a battle, but every drop of sweat has been worth it. It’s not about perfection, it’s about progress! #NeverGiveUp",
-        "realScore": 390,
-        "comments": [
-          {
-            "commenter": "Tom",
-            "comment": "You’ve come so far, you’re an inspiration! 💯"
-          }
-        ]
-      },
-      {
-        "userId": 10,
-        "username": "lily_clark",
-        "imageUrl": "https://via.placeholder.com/300x300?text=Travels+and+Adventures",
-        "caption": "Every trip, every adventure, has taught me something new. Life is all about making memories, so get out there and explore the world! 🌍 #Wanderlust",
-        "realScore": 450,
-        "comments": [
-          {
-            "commenter": "Lily",
-            "comment": "Love this! Every trip teaches us something about ourselves 🌏"
-          },
-          {
-            "commenter": "Sophia",
-            "comment": "I can’t wait to start my own adventure soon! ✈️"
-          }
-        ]
-      }
-    ]
-  }
+  "posts": [
+    {
+      "userId": 1,
+      "username": "John_Doe",
+      "imageUrl": "https://via.placeholder.com/300x300?text=Fitness+Journey",
+      "caption": "The beginning of my fitness journey. It's not easy, but it's worth it. Every rep counts!",
+      "realScore": 230,
+      "userProfileUrl": "data/profiles/John_Doe.jpg",
+      "comments": [
+        {
+          "commenter": "Alice",
+          "comment": "You’re doing great! Keep pushing yourself! 💪"
+        },
+        {
+          "commenter": "Bob",
+          "comment": "This is so motivating, I need to start working out too!"
+        }
+      ]
+    },
+    {
+      "userId": 2,
+      "username": "Emma_Williams",
+      "imageUrl": "https://via.placeholder.com/300x300?text=Weight+Loss+Journey",
+      "caption": "Started my weight loss journey last year, and it’s been a rollercoaster. Small steps every day make a huge difference. #TransformationTuesday",
+      "realScore": 350,
+      "userProfileUrl": "data/profiles/Emma_Williams.jpg",
+      "comments": [
+        {
+          "commenter": "Charlie",
+          "comment": "You look amazing! Keep it up, it’s all worth it! 🏋️‍♀️"
+        },
+        {
+          "commenter": "Daisy",
+          "comment": "You’ve inspired me to take my first steps towards a healthier lifestyle! 🌱"
+        }
+      ]
+    },
+    {
+      "userId": 3,
+      "username": "Sophia_Lee",
+      "imageUrl": "https://via.placeholder.com/300x300?text=Buying+My+First+Home",
+      "caption": "The process of buying my first home. It was stressful, but I’m so proud of how far I’ve come. Can't wait to make this place my own! #HomeSweetHome",
+      "realScore": 450,
+      "userProfileUrl": "data/profiles/Sophia_Lee.jpg",
+      "comments": [
+        {
+          "commenter": "Eva",
+          "comment": "Congrats! Buying your first home is such an accomplishment 🏡"
+        },
+        {
+          "commenter": "Lily",
+          "comment": "I can’t wait to see how you decorate it! 💕"
+        }
+      ]
+    },
+    {
+      "userId": 4,
+      "username": "Lucas_Martin",
+      "imageUrl": "https://via.placeholder.com/300x300?text=My+Best+Friends+Journey",
+      "caption": "This is how I met my best friends. We’ve been through thick and thin together, and I couldn’t imagine life without them. #FriendshipGoals",
+      "realScore": 500,
+      "userProfileUrl": "data/profiles/Lucas_Martin.jpg",
+      "comments": [
+        {
+          "commenter": "John",
+          "comment": "True friendship is priceless. So glad you found your tribe! 🙌"
+        },
+        {
+          "commenter": "Olivia",
+          "comment": "Friendship like this is what life is all about! ❤️"
+        }
+      ]
+    },
+    {
+      "userId": 5,
+      "username": "Mia_Johnson",
+      "imageUrl": "https://via.placeholder.com/300x300?text=New+Car+Journey",
+      "caption": "From dreaming to reality – the journey of buying my first car. It took hard work, sacrifice, and persistence, but I did it! 🚗💨 #DreamCar",
+      "realScore": 380,
+      "userProfileUrl": "data/profiles/Mia_Johnson.jpg",
+      "comments": [
+        {
+          "commenter": "Tom",
+          "comment": "This is incredible! I can’t wait to get mine one day! 🙌"
+        },
+        {
+          "commenter": "Emma",
+          "comment": "So inspiring, congrats on your new car! 🎉"
+        }
+      ]
+    },
+    {
+      "userId": 6,
+      "username": "Claire_Smith",
+      "imageUrl": "https://via.placeholder.com/300x300?text=Weight+Loss+Transformation",
+      "caption": "Transformation isn’t just physical; it’s mental too. I’ve changed my mindset as much as my body. It’s about becoming the best version of myself. #MindOverMatter",
+      "realScore": 400,
+      "userProfileUrl": "data/profiles/Claire_Smith.jpg",
+      "comments": [
+        {
+          "commenter": "Sophia",
+          "comment": "You’ve been an inspiration to me on my own journey! 💪"
+        },
+        {
+          "commenter": "Mia",
+          "comment": "It’s all about the mental strength. Keep it up, you’re doing amazing! ✨"
+        }
+      ]
+    },
+    {
+      "userId": 7,
+      "username": "Oliver_Brown",
+      "imageUrl": "https://via.placeholder.com/300x300?text=New+Job+Adventure",
+      "caption": "Starting a new chapter in my career. It wasn’t easy to leave my comfort zone, but I’m so excited for what’s ahead! #NewBeginnings",
+      "realScore": 320,
+      "userProfileUrl": "data/profiles/Oliver_Brown.jpg",
+      "comments": [
+        {
+          "commenter": "Sophia",
+          "comment": "Proud of you for taking the leap! You’ve got this! 🚀"
+        },
+        {
+          "commenter": "Lily",
+          "comment": "Change is hard, but it’s so worth it in the end! Good luck! 🍀"
+        }
+      ]
+    },
+    {
+      "userId": 8,
+      "username": "Sophia_Taylor",
+      "imageUrl": "https://via.placeholder.com/300x300?text=Graduation+Journey",
+      "caption": "Graduation day! The hard work, the late nights, and all the sacrifices were so worth it. Here’s to new adventures and the future! 🎓 #GraduationVibes",
+      "realScore": 550,
+      "userProfileUrl": "data/profiles/Sophia_Taylor.jpg",
+      "comments": [
+        {
+          "commenter": "Olivia",
+          "comment": "You did it! So proud of you! 🎉"
+        },
+        {
+          "commenter": "Charlie",
+          "comment": "This is just the beginning! I can’t wait to see what you do next! 🚀"
+        }
+      ]
+    },
+    {
+      "userId": 9,
+      "username": "Henry_Davis",
+      "imageUrl": "https://via.placeholder.com/300x300?text=Fitness+Transformation",
+      "caption": "This fitness journey has been a battle, but every drop of sweat has been worth it. It’s not about perfection, it’s about progress! #NeverGiveUp",
+      "realScore": 390,
+      "userProfileUrl": "data/profiles/Henry_Davis.jpg",
+      "comments": [
+        {
+          "commenter": "Tom",
+          "comment": "You’ve come so far, you’re an inspiration! 💯"
+        }
+      ]
+    },
+    {
+      "userId": 10,
+      "username": "Lily_Clark",
+      "imageUrl": "https://via.placeholder.com/300x300?text=Travels+and+Adventures",
+      "caption": "Every trip, every adventure, has taught me something new. Life is all about making memories, so get out there and explore the world! 🌍 #Wanderlust",
+      "realScore": 450,
+      "userProfileUrl": "data/profiles/Lily_Clark.jpg",
+      "comments": [
+        {
+          "commenter": "Lily",
+          "comment": "Love this! Every trip teaches us something about ourselves 🌏"
+        },
+        {
+          "commenter": "Sophia",
+          "comment": "I can’t wait to start my own adventure soon! ✈️"
+        }
+      ]
+    }
+  ]
+}
