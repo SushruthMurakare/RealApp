@@ -16,7 +16,7 @@ function App() {
   const [posts, setPosts] = useState(null);
   const [stories, setStories] = useState(null);
   const [newPostPop, setNewPostPop] = useState(false);
-  const [typeOfPost, setTypeofPost] = useState('');
+  const [typeOfPost, setTypeofPost] = useState("");
   const scrollDiv = useRef(null);
 
   // 0 = home page
@@ -42,26 +42,30 @@ function App() {
     );
   }, []);
 
+  // scroll to the top when switching pages
   useEffect(() => {
     scrollDiv.current.scrollTop = 0;
   }, [currPage]);
 
   const newPostSelection = (type) => {
-    setTypeofPost(type)
-    setNewPostPop(!newPostPop)
+    setTypeofPost(type);
+    setNewPostPop(!newPostPop);
     setCurrPage(4);
-  }
+  };
 
   return (
-    <div className="flex flex-col h-full overflow-hidden">
+    <div className="flex flex-col h-screen overflow-hidden">
       <div
         ref={scrollDiv}
         className="flex-grow bg-gray-100 overflow-y-auto overflow-x-hidden"
       >
-        {
-          newPostPop && 
-          <NewPostPopUpOptions setValue={(type)=>{newPostSelection(type) }}/>
-        }
+        {newPostPop && (
+          <NewPostPopUpOptions
+            setValue={(type) => {
+              newPostSelection(type);
+            }}
+          />
+        )}
         {posts === null ? (
           <p className="text-center p-4">Loading...</p>
         ) : currPage === 0 ? (
@@ -72,8 +76,8 @@ function App() {
           <AccountPage setCurrPage={setCurrPage} />
         ) : currPage === 2.5 ? (
           <AccountPage setCurrPage={setCurrPage} goal />
-        ) : currPage === 4 ?(
-          <NewPost typeOfPost={typeOfPost}/>
+        ) : currPage === 4 ? (
+          <NewPost typeOfPost={typeOfPost} />
         ) : (
           <MessagePage />
         )}
@@ -85,7 +89,10 @@ function App() {
         <div onClick={() => setCurrPage(1)} className="h-12 w-12 p-2">
           <LightBulbIcon fill={currPage === 1} />
         </div>
-        <div onClick={() => setNewPostPop(!newPostPop)} className="h-12 w-12 p-2">
+        <div
+          onClick={() => setNewPostPop(!newPostPop)}
+          className="h-12 w-12 p-2"
+        >
           <LightBulbIcon fill={currPage === 4} />
         </div>
         <div onClick={() => setCurrPage(2)} className="h-12 w-12 p-2">

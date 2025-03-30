@@ -32,11 +32,22 @@ const PostCard = ({ post }) => {
           )}
         </div>
         {post.type === "timeline" && (
-          <input type="range" value="70" className="w-full timeline"></input>
+          <>
+            <input
+              type="range"
+              value="70"
+              readOnly
+              className="w-full timeline"
+            ></input>
+            <div className="flex justify-between font-light text-xs mt-[-10px] mb-2">
+              <p>January</p>
+              <p>May</p>
+            </div>
+          </>
         )}
-        <p className="text-gray-800 text-sm mb-2">{post.caption}</p>
+        <p className="text-gray-800 text-sm">{post.caption}</p>
         {post.type === "regular" && (
-          <div className="p-1 bg-blue-500 text-white rounded-lg inline-block">
+          <div className="p-1 bg-blue-500 text-white rounded-lg mt-2 inline-block">
             <a href="https://www.instagram.com/p/DHwCk7jRSyp/?utm_source=ig_web_copy_link">
               Actual Post
             </a>
