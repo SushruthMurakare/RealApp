@@ -40,7 +40,7 @@ const PostCard = ({ post }) => {
   };
 
   return (
-    <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden border border-gray-200 bg-white">
+    <div className="w-full max-w-2xl mx-auto rounded-2xl mb-3 shadow-lg overflow-hidden border border-gray-200 bg-white">
       <div className="p-3">
         <div className="flex items-center mb-1">
           <img
