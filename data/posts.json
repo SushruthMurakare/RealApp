@@ -115,12 +115,12 @@
     {
       "userId": 10,
       "type": "regular",
-      "username": "Jess_Clark",
-      "imageUrl": null,
-      "caption": "Every trip, every adventure, has taught me something new. Life is all about making memories, so get out there and explore the world! 🌍 #Wanderlust",
+      "username": "Luisa_Yu",
+      "imageUrl": "data/pictures/travel.jpg",
+      "caption": "Traveling to every country in the world has been the center of my life since I was a kid. Every trip, every adventure, has taught me something new. Life is all about making memories, so get out there and explore the world! 🌍 #Wanderlust",
       "realScore": 450,
-      "userProfileUrl": "data/profiles/Jess_Clark.jpg",
-      "instaLink": "https://www.instagram.com/p/DHwCk7jRSyp/?img_index=1",
+      "userProfileUrl": "data/profiles/Luisa_Yu.png",
+      "instaLink": "https://www.instagram.com/p/CzcCGFJL36p/",
       "comments": [
         {
           "commenter": "Lily",
@@ -143,7 +143,7 @@
     {
       "userId": 2,
       "username": "Emma_Williams",
-      "imageUrl": null,
+      "imageUrl": "data/pictures/travel2.jpg",
       "caption": "Started my weight loss journey last year, and it’s been a rollercoaster. Small steps every day make a huge difference. #TransformationTuesday",
       "realScore": 350,
       "userProfileUrl": "data/profiles/Emma_Williams.jpg",
