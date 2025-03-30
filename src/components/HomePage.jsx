@@ -16,7 +16,7 @@ export default function HomePage({ posts, stories }) {
                   />
                 </div>
               </div>
-              <p className="text-[9px] text-center text-ellipsis w-16 overflow-hidden">
+              <p className="text-[10px] text-center text-ellipsis w-16 overflow-hidden">
                 {story.username}
               </p>
             </div>
