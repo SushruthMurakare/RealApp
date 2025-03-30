@@ -7,10 +7,10 @@
     @apply h-screen overflow-hidden overscroll-none;
   }
 
-  #reals-scroll::-webkit-scrollbar {
+  .no-scrollbar::-webkit-scrollbar {
     @apply hidden;
   }
-  #reals-scroll {
+  .no-scrollbar {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
