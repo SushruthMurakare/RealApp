@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import HomePage from "./components/HomePage";
 import HomeIcon from "./components/icons/HomeIcon";
 import LightBulbIcon from "./components/icons/LightBulbIcon";
@@ -13,13 +13,13 @@ function App() {
   const [currPage, setCurrPage] = useState(0);
   const [posts, setPosts] = useState(null);
   const [stories, setStories] = useState(null);
+  const scrollDiv = useRef(null);
 
   // 0 = home page
   // 1 = reals page
   // 2 = account page
   // 2.5 = account page showing goal
   // 3 = messaging page
-  console.log(currPage);
 
   viewGoal.f = () => {
     setCurrPage(2.5);
@@ -31,9 +31,6 @@ function App() {
         setPosts(data);
       })
     );
-  }, []);
-
-  useEffect(() => {
     fetch("http://localhost:3000/stories").then((response) =>
       response.json().then((data) => {
         setStories(data);
@@ -41,9 +38,16 @@ function App() {
     );
   }, []);
 
+  useEffect(() => {
+    scrollDiv.current.scrollTop = 0;
+  }, [currPage]);
+
   return (
     <div className="flex flex-col h-full overflow-hidden">
-      <div className="flex-grow bg-gray-100 overflow-y-auto overflow-x-hidden">
+      <div
+        ref={scrollDiv}
+        className="flex-grow bg-gray-100 overflow-y-auto overflow-x-hidden"
+      >
         {posts === null ? (
           <p className="text-center p-4">Loading...</p>
         ) : currPage === 0 ? (
@@ -53,7 +57,7 @@ function App() {
         ) : currPage === 2 ? (
           <AccountPage setCurrPage={setCurrPage} />
         ) : currPage === 2.5 ? (
-          <AccountPage goal setCurrPage={setCurrPage} />
+          <AccountPage setCurrPage={setCurrPage} goal />
         ) : (
           <MessagePage />
         )}
