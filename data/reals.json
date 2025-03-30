@@ -2,51 +2,87 @@
   "reals": [
     {
       "videoUrl": "data/reals/Video-473.mp4",
-      "caption": "caption #1"
+      "caption": "caption #1",
+      "profilePicture": "data/profiles/Sophia_Taylor.jpg",
+      "username": "Sophia_Taylor",
+      "description": "This is a description for the first video."
     },
     {
       "videoUrl": "data/reals/Video-647.mp4",
-      "caption": "caption #2"
+      "caption": "caption #2",
+      "profilePicture": "data/profiles/Sophia_Lee.jpg",
+      "username": "Sophia_Lee",
+      "description": "This is a description for the second video."
     },
     {
       "videoUrl": "data/reals/Video-997.mp4",
-      "caption": "caption #3"
+      "caption": "caption #3",
+      "profilePicture": "data/profiles/Mia_Johnson.jpg",
+      "username": "Mia_Johnson",
+      "description": "This is a description for the third video."
     },
     {
       "videoUrl": "data/reals/Video-473.mp4",
-      "caption": "caption #1"
+      "caption": "caption #1",
+      "profilePicture": "data/profiles/Sophia_Taylor.jpg",
+      "username": "Sophia_Taylor",
+      "description": "This is a description for the first video."
     },
     {
       "videoUrl": "data/reals/Video-647.mp4",
-      "caption": "caption #2"
+      "caption": "caption #2",
+      "profilePicture": "data/profiles/Sophia_Lee.jpg",
+      "username": "Sophia_Lee",
+      "description": "This is a description for the second video."
     },
     {
       "videoUrl": "data/reals/Video-997.mp4",
-      "caption": "caption #3"
+      "caption": "caption #3",
+      "profilePicture": "data/profiles/Mia_Johnson.jpg",
+      "username": "Mia_Johnson",
+      "description": "This is a description for the third video."
     },
     {
       "videoUrl": "data/reals/Video-473.mp4",
-      "caption": "caption #1"
+      "caption": "caption #1",
+      "profilePicture": "data/profiles/Sophia_Taylor.jpg",
+      "username": "Sophia_Taylor",
+      "description": "This is a description for the first video."
     },
     {
       "videoUrl": "data/reals/Video-647.mp4",
-      "caption": "caption #2"
+      "caption": "caption #2",
+      "profilePicture": "data/profiles/Sophia_Lee.jpg",
+      "username": "Sophia_Lee",
+      "description": "This is a description for the second video."
     },
     {
       "videoUrl": "data/reals/Video-997.mp4",
-      "caption": "caption #3"
+      "caption": "caption #3",
+      "profilePicture": "data/profiles/Mia_Johnson.jpg",
+      "username": "Mia_Johnson",
+      "description": "This is a description for the third video."
     },
     {
       "videoUrl": "data/reals/Video-473.mp4",
-      "caption": "caption #1"
+      "caption": "caption #1",
+      "profilePicture": "data/profiles/Sophia_Taylor.jpg",
+      "username": "Sophia_Taylor",
+      "description": "This is a description for the first video."
     },
     {
       "videoUrl": "data/reals/Video-647.mp4",
-      "caption": "caption #2"
+      "caption": "caption #2",
+      "profilePicture": "data/profiles/Sophia_Lee.jpg",
+      "username": "Sophia_Lee",
+      "description": "This is a description for the second video."
     },
     {
       "videoUrl": "data/reals/Video-997.mp4",
-      "caption": "caption #3"
+      "caption": "caption #3",
+      "profilePicture": "data/profiles/Mia_Johnson.jpg",
+      "username": "Mia_Johnson",
+      "description": "This is a description for the third video."
     }
   ]
 }

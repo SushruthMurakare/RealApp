@@ -34,14 +34,29 @@ export default function RealsPage() {
   return (
     <div id="reals-scroll" className="h-[calc(100vh-56px)] overflow-y-auto snap-y snap-mandatory scroll-smooth">
       {reals?.reals.map((real, index) => (
-        <video
-          key={real.videoUrl}
-          ref={(el) => (videosRef.current[index] = el)}
-          className="w-full h-[calc(100vh-56px)] object-cover snap-center"
-          playsInline
-        >
-          <source src={"../../" + real.videoUrl} />
-        </video>
+        <div key={real.videoUrl} className="relative w-full h-[calc(100vh-56px)] scroll-smooth snap-center">
+          {/* Video Element */}
+          <video
+            ref={(el) => (videosRef.current[index] = el)} // Assign ref dynamically
+            className="w-full h-full object-cover"
+            playsInline
+            loop
+          >
+            <source src={"../../" + real.videoUrl} />
+          </video>
+          {/* Profile Picture & Description */}
+          <div className="absolute bottom-2 left-2 flex items-center space-x-3 bg-gray-900/20 p-2 rounded-lg">
+            <img
+              src={real.profilePicture} // Assuming API provides profilePicture
+              alt="Profile"
+              className="w-12 h-12 rounded-full border-2 border-white object-cover"
+            />
+            <div className="text-white">
+              <p className="font-semibold text-sm">{real.username}</p>
+              <p className="text-xs opacity-80">{real.description}</p>
+            </div>
+          </div>
+        </div>
       ))}
     </div>
   );
