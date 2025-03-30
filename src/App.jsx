@@ -10,6 +10,7 @@ import MessagePage from "./components/MessagePage";
 import viewGoal from "./functions/viewGoal";
 import NewPost from "./components/NewPost";
 import NewPostPopUpOptions from "./components/NewPostPopUp";
+import PlusIcon from "./components/icons/PlusIcon";
 
 function App() {
   const [currPage, setCurrPage] = useState(0);
@@ -93,7 +94,7 @@ function App() {
           onClick={() => setNewPostPop(!newPostPop)}
           className="h-12 w-12 p-2"
         >
-          <LightBulbIcon fill={currPage === 4} />
+          <PlusIcon fill={currPage === 4} />
         </div>
         <div onClick={() => setCurrPage(2)} className="h-12 w-12 p-2">
           <AccountIcon fill={currPage === 2 || currPage === 2.5} />
