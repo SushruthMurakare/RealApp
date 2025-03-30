@@ -63,7 +63,11 @@ function App() {
         {newPostPop && (
           <NewPostPopUpOptions
             setValue={(type) => {
-              newPostSelection(type);
+              if (type !== undefined) {
+                newPostSelection(type);
+              } else {
+                setNewPostPop(false);
+              }
             }}
           />
         )}
