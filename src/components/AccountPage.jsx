@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaGithub } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter,
+  FaGithub,
+  FaArrowLeft,
+} from "react-icons/fa";
 import user from "../../data/user.json";
 import ProfilePostsGrid from "./icons/ProfilePostsGrid";
 
 const AccountPage = ({ goal, setCurrPage }) => {
-  console.log(goal);
   return (
     <>
       <div className="flex flex-col items-center h-screen bg-gray-50">
@@ -46,11 +51,16 @@ const AccountPage = ({ goal, setCurrPage }) => {
       </div>
       <div
         className={
-          "absolute top-0 right-[50vw] transition w-100vw h-100" +
-          (goal ? " translate-x-[-100vw]" : "")
+          "absolute top-0 left-[100vw] transition w-dvw h-[calc(100vh-56px)] bg-gray-100 p-4" +
+          (goal ? " [transform:translate(-100vw)]" : "")
         }
       >
-        test
+        <div className="flex">
+          <div onClick={() => setCurrPage(2)} className="w-10 h-10 p-2">
+            <FaArrowLeft className="w-full h-full" />
+          </div>
+          {/* <h1 class>Goal</h1> */}
+        </div>
       </div>
     </>
   );
