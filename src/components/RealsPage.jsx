@@ -36,7 +36,7 @@ export default function RealsPage() {
     <div className="no-scrollbar h-[calc(100vh-56px)] overflow-y-auto snap-y snap-mandatory scroll-smooth">
       {reals?.reals.map((real, index) => (
         <div
-          key={real.videoUrl}
+          key={index}
           className="relative w-full h-[calc(100vh-56px)] scroll-smooth snap-center"
         >
           {/* Video Element */}
