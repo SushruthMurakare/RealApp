@@ -1,24 +1,32 @@
 {
   "stories": [
     {
-      "username": "Sophia_Lee_Raymond",
+      "username": "Sophia_Lee_Raymond12",
       "profileImgUrl": "data/profiles/Sophia_Lee.jpg"
     },
     {
-      "username": "Jess_Clark",
-      "profileImgUrl": "data/profiles/Jess_Clark.jpg"
+      "username": "danial",
+      "profileImgUrl": "data/profiles/danial.png"
     },
     {
-      "username": "Mia_Johnson",
+      "username": "jah_808",
+      "profileImgUrl": "data/profiles/jah_808.png"
+    },
+    {
+      "username": "Jess_Clark",
+      "profileImgUrl": "data/pictures/graduation.jpg"
+    },
+    {
+      "username": "_Mia_Johnson_",
       "profileImgUrl": "data/profiles/Mia_Johnson.jpg"
     },
     {
-      "username": "Kevin_Cooper",
+      "username": "kcooper",
       "profileImgUrl": "data/profiles/Kevin_Cooper.jpg"
     },
     {
-      "username": "Sophia_Taylor",
-      "profileImgUrl": "data/profiles/Sophia_Taylor.jpg"
+      "username": "taylor1",
+      "profileImgUrl": "data/profiles/danial.png"
     },
     {
       "username": "Lena_Young",
@@ -26,15 +34,15 @@
     },
     {
       "username": "Emma_Williams",
-      "profileImgUrl": "data/profiles/Emma_Williams.jpg"
+      "profileImgUrl": "data/pictures/workout2.png"
     },
     {
       "username": "Jess_Clark",
       "profileImgUrl": "data/profiles/Jess_Clark.jpg"
     },
     {
-      "username": "Mia_Johnson",
-      "profileImgUrl": "data/profiles/Mia_Johnson.jpg"
+      "username": "puggle",
+      "profileImgUrl": "data/profiles/puggle.png"
     },
     {
       "username": "Kevin_Cooper",
