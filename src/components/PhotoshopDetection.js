@@ -5,7 +5,6 @@ import key from "../../key.json";
 // A return value of true means that the image is okay to be uploaded, a no means that it should be rejected
 
 const groq = new Groq({ apiKey: key.key, dangerouslyAllowBrowser: true });
-console.log(key.key);
 export async function PhotoshopDetection(photoshop, imageUrl) {
   if (photoshop) {
     const chatCompletion = await groq.chat.completions.create({
@@ -51,7 +50,7 @@ export async function PhotoshopDetection(photoshop, imageUrl) {
           content: [
             {
               type: "text",
-              text: "Based on the image, please answer the following question: Is this image educational? Does it give some sort of information that could be useful to the viewer? Respond with a yes or a no. Nothing else, just a yes or no response. ",
+              text: "Analyze the provided image to detect signs of heavy editing, manipulation, or enhancement using tools like Photoshop. Identify indicators such as unnatural pixel patterns, inconsistent lighting and shadows, compression artifacts, cloned or warped areas, and unnatural body shapes. Provide a confidence score on how likely the image has been altered and specify the detected modifications. If this score is a 6 or higher, and you believe that the image has been modified, answer using the word 'xylophone', otherwise if you believe the image is unedited, answer with the word 'no' in your response.",
             },
             {
               type: "image_url",
@@ -71,12 +70,10 @@ export async function PhotoshopDetection(photoshop, imageUrl) {
     });
 
     console.log(chatCompletion.choices[0].message.content);
-    if (
-      chatCompletion.choices[0].message.content.toLowerCase().includes("yes")
-    ) {
-      return true;
+    if (chatCompletion.choices[0].message.content.toLowerCase().includes("xylophone")) {
+      return false;
     } else {
-      return false; // Return true or false based on the response
+      return true; // Return true or false based on the response
     }
   }
 }

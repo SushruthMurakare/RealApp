@@ -1,29 +1,55 @@
 import { useState, onChange } from "react";
 import { PhotoshopDetection } from "../PhotoshopDetection";
+// import fs from "fs";
+// import path from "path";
 const BehindTheScenes = ({typeOfPost}) => {
 const [actualPostUrl, setPostUrl] = useState("");
 const [description, setDescription] = useState("");
 const [image, setImage] = useState("");
 const [taggedPeople, setTaggedPeople] = useState("");
+const [base64Image, setBase64Image] = useState(""); 
   
 // Handle post creation (this is the function used when the "Post" button is clicked)
 const handlePostCreation = () => {
-  // Validate that all necessary fields are filled
-  if (!actualPostUrl || !description || !image || !taggedPeople) {
-    console.log("Error: All fields must be filled.");
-    return;
-  }
+  console.log("Post created with:");
+  console.log("Actual Post URL:", actualPostUrl);
+  console.log("Description:", description);
+  console.log("Image (Base64):", base64Image);
+  console.log("Tagged People:", taggedPeople);
 
-  createPost(actualPostUrl, description, image, taggedPeople);
+  createPost(actualPostUrl, description, base64Image, taggedPeople);
+};
+
+const encodeImageToBase64 = (file) => {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.readAsDataURL(file);
+    reader.onload = () => resolve(reader.result.split(",")[1]); // Remove `data:image/...;base64,` prefix
+    reader.onerror = (error) => reject(error);
+  });
+};
+
+const handleImageChange = async (event) => {
+  const file = event.target.files[0];
+  if (file) {
+    setImage(file);
+    try {
+      const base64 = await encodeImageToBase64(file);
+      setBase64Image(base64);
+    } catch (error) {
+      console.error("Error encoding image:", error);
+    }
+  }
 };
 
 // Function that creates the post and checks if the image is edited with Photoshop
 function createPost(actualPostUrl, description, image, taggedPeople) {
-  if (!actualPostUrl || !description || !image || !taggedPeople) {
+  if (!actualPostUrl || !description || !image) {
     console.log("Error: All fields must be filled.");
     return;
   }
-  const imageUrl = URL.createObjectURL(image); // Create a URL for the image file
+  const imageUrl = `data:image/jpeg;base64,${image}`;
+
   console.log("Post created with the following data:");
   console.log("Actual Post URL:", actualPostUrl);
   console.log("Description:", description);
@@ -31,7 +57,7 @@ function createPost(actualPostUrl, description, image, taggedPeople) {
   console.log("Tagged People:", taggedPeople);
 
   // PhotoshopDetection logic (assuming it's a promise-based function)
-  PhotoshopDetection(true, imageUrl).then((isPhotoshop) => {
+  PhotoshopDetection(false, imageUrl).then((isPhotoshop) => {
     if (!isPhotoshop) {
       console.log("Image is edited with Photoshop. Rejecting the post.");
       // Handle rejection logic (like showing an error to the user)
@@ -68,7 +94,7 @@ return (
           <label className="block text-gray-600 font-medium">Upload Image</label>
           <input type="file" 
           className="w-full p-2 border rounded-md" 
-          onChange={(e) => setImage(e.target.files[0])}
+          onChange={handleImageChange}
           />
           <label className="block text-gray-600 font-medium">Tag People</label>
       <input
