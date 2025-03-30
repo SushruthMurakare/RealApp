@@ -5,10 +5,42 @@ import viewGoal from "../functions/viewGoal";
 
 const PostCard = ({ post }) => {
   const [showPopup, setShowPopup] = useState(false);
+  const [a, setA] = useState(0)
 
   const handleLikeClick = () => {
     setShowPopup(!showPopup);
   };
+
+  const stateUpdate = () => {
+    setA(a +1)
+  }
+
+  // const realScoreUpdate = async (userId, like) => {
+  //   try {
+  //     await fetch("http://localhost:3000/posts/like", {
+  //       method: "PUT",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({ userId: userId, like: like }),
+  //     });
+  //   } catch (err) {
+  //     console.error("Error:", error);
+  //     alert("Failed to like post");
+  //   }
+  // };
+
+  const realScoreUpdate = async (userId, like) => {
+    if(like){
+      post.realScore += 1;
+    }
+    else {
+      post.realScore -= 1;
+      stateUpdate();
+    }
+    
+  }
+
   return (
     <div className="w-full max-w-2xl mx-auto rounded-2xl shadow-lg overflow-hidden border border-gray-200 bg-white">
       <div className="p-3">
@@ -66,7 +98,7 @@ const PostCard = ({ post }) => {
           <span>{post.likesCount} Likes</span>
         </div>
         <div className="flex items-center gap-2">
-          <ThumbsDown className="w-5 h-5 text-red-500" />
+          <ThumbsDown className="w-5 h-5 text-red-500" onClick={()=>{ realScoreUpdate(post.userId, false)}}/>
           <span>{post.likesCount} Fake</span>
         </div>
         <div className="flex items-center gap-2">
@@ -75,7 +107,11 @@ const PostCard = ({ post }) => {
           {showPopup && (
             <div className="absolute left-0 bottom-10 bg-white p-2 rounded-lg shadow-lg w-40 text-center">
               <ul
-                onClick={() => setShowPopup(!showPopup)}
+                onClick={() => {
+                  setShowPopup(!showPopup);
+                  realScoreUpdate(post.userId, true)
+
+                }}
                 className="space-y-2"
               >
                 <li className="cursor-pointer text-gray-600 hover:text-gray-900">
