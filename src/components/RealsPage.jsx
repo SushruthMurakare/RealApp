@@ -1,3 +1,4 @@
+import { Ellipsis, Heart, MessageCircle, Share } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 
 export default function RealsPage() {
@@ -34,7 +35,10 @@ export default function RealsPage() {
   return (
     <div className="no-scrollbar h-[calc(100vh-56px)] overflow-y-auto snap-y snap-mandatory scroll-smooth">
       {reals?.reals.map((real, index) => (
-        <div key={real.videoUrl} className="relative w-full h-[calc(100vh-56px)] scroll-smooth snap-center">
+        <div
+          key={real.videoUrl}
+          className="relative w-full h-[calc(100vh-56px)] scroll-smooth snap-center"
+        >
           {/* Video Element */}
           <video
             ref={(el) => (videosRef.current[index] = el)} // Assign ref dynamically
@@ -45,15 +49,25 @@ export default function RealsPage() {
             <source src={"../../" + real.videoUrl} />
           </video>
           {/* Profile Picture & Description */}
-          <div className="absolute bottom-2 left-2 flex items-center space-x-3 bg-gray-900/20 p-2 rounded-lg">
-            <img
-              src={real.profilePicture} // Assuming API provides profilePicture
-              alt="Profile"
-              className="w-12 h-12 rounded-full border-2 border-white object-cover"
-            />
-            <div className="text-white">
-              <p className="font-semibold text-sm">{real.username}</p>
-              <p className="text-xs opacity-80">{real.description}</p>
+          <div className="absolute bottom-0 left-0 w-full p-2 flex flex-col items-end">
+            <div className="p-2 flex flex-col text-[10px] font-semibold text-white items-center gap-[1px]">
+              <Heart size="26" />
+              <p className="mb-4">{`${(200 * Math.random()).toFixed(1)}k`}</p>
+              <MessageCircle size="26" />
+              <p className="mb-4">{`${(50 * Math.random()).toFixed(1)}k`}</p>
+              <Share size="26" className="mb-4" />
+              <Ellipsis size="24" />
+            </div>
+            <div className="flex items-center w-full bg-gray-900/40 p-2 gap-2 rounded-lg">
+              <img
+                src={real.profilePicture} // Assuming API provides profilePicture
+                alt="Profile"
+                className="w-9 h-9 rounded-full border-2 border-white object-cover"
+              />
+              <div className="text-white">
+                <p className="font-semibold text-sm">{real.username}</p>
+                <p className="text-xs opacity-80">{real.description}</p>
+              </div>
             </div>
           </div>
         </div>
