@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   FaFacebook,
   FaInstagram,
@@ -7,53 +7,68 @@ import {
   FaArrowLeft,
 } from "react-icons/fa";
 import user from "../../data/user.json";
-import ProfilePostsGrid from "./icons/ProfilePostsGrid";
 
 const AccountPage = ({ goal, setCurrPage }) => {
   return (
     <>
-      <div className="flex flex-col items-center overflow-hidden bg-gray-50">
-        <img
-          src={user.profileImage}
-          alt="Profile"
-          className="w-25 h-25 m-2 rounded-full flex-shrink-0 object-cover border-4 border-gray-300"
-        />
-        <div className="text-center mb-3">
-          <h1 className="text-2xl font-semibold text-gray-800">{user?.name}</h1>
-          <p className="text-lg text-gray-500 mb-1">{user?.username}</p>
-          <p className="text-sm text-gray-600">Real Score: {user?.realScore}</p>
-        </div>
-
-        <div className="flex gap-6">
-          <FaFacebook className="w-8 h-8 text-blue-600 cursor-pointer hover:text-blue-800" />
-          <FaInstagram className="w-8 h-8 text-pink-600 cursor-pointer hover:text-pink-800" />
-          <FaTwitter className="w-8 h-8 text-blue-400 cursor-pointer hover:text-blue-600" />
-          <FaGithub className="w-8 h-8 text-gray-800 cursor-pointer hover:text-black" />
-        </div>
-
-        <div className="py-3 px-5 w-full">
-          <h2 className="w-full mb-1">Ongoing Goals:</h2>
-          <div className="flex gap-2 mb-2" onClick={() => setCurrPage(2.5)}>
-            <h3 className="text-xs flex-shrink-0">Getting in Shape:</h3>
-            <input
-              type="range"
-              value="70"
-              readOnly
-              className="w-full timeline"
-            ></input>
+      <div className="overflow-hidden bg-gray-150">
+        <div className="p-2 flex flex-col items-center">
+          <img
+            src={user.profileImage}
+            alt="Profile"
+            className="w-25 h-25 m-1 rounded-full flex-shrink-0 object-cover border-4 border-gray-300"
+          />
+          <div className="text-center mb-3">
+            <h1 className="text-2xl font-semibold text-gray-800">
+              {user?.name}
+            </h1>
+            <p className="text-lg text-gray-500 mb-1">{user?.username}</p>
+            <p className="text-sm text-gray-600">
+              Real Score: {user?.realScore}
+            </p>
           </div>
-          <div className="flex gap-15">
-            <h3 className="text-xs flex-shrink-0">Goal #2:</h3>
-            <input type="range" value="20" className="w-full timeline"></input>
+
+          <div className="flex gap-6 mb-2">
+            <FaFacebook className="w-8 h-8 text-blue-600 cursor-pointer hover:text-blue-800" />
+            <FaInstagram className="w-8 h-8 text-pink-600 cursor-pointer hover:text-pink-800" />
+            <FaTwitter className="w-8 h-8 text-blue-400 cursor-pointer hover:text-blue-600" />
+            <FaGithub className="w-8 h-8 text-gray-800 cursor-pointer hover:text-black" />
+          </div>
+
+          <div className="p-3 pt-2 w-full bg-gray-50 border-[1px] border-gray-300 rounded-md">
+            <h2 className="w-full mb-1">Ongoing Goals:</h2>
+            <div
+              className="flex gap-2 mb-2 justify-end"
+              onClick={() => setCurrPage(2.5)}
+            >
+              <h3 className="text-xs">Getting in Shape:</h3>
+              <input
+                type="range"
+                value="70"
+                readOnly
+                className="w-[50vw] timeline flex-shrink-0"
+              ></input>
+            </div>
+            <div className="flex gap-2 justify-end">
+              <h3 className="text-xs text-nowrap">Completing a Course:</h3>
+              <input
+                type="range"
+                value="20"
+                readOnly
+                className="w-[50vw] timeline flex-shrink-0"
+              ></input>
+            </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-3 gap-4 w-full max-w-5xl mx-auto m-3">
-          {Array.from({ length: 12 }, (_, index) => (
-            <ProfilePostsGrid key={index} />
+        <div className="grid grid-cols-3 sm:grid-cols-2 gap-1 w-full">
+          {user.posts.map((url) => (
+            <img src={url} className="w-full h-36 object-cover"></img>
           ))}
         </div>
       </div>
+
+      {/* Goal side page thingy */}
       <div
         onScroll={(e) => e.preventDefault()}
         className={
