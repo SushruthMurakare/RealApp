@@ -3,10 +3,10 @@ import React from 'react';
 const MessagePage = () => {
   // Example list of users, their messages, and image URLs
   const usersMessages = [
-    { username: "John Doe", message: "Hey! How's it going?", imageUrl: "https://via.placeholder.com/40" },
-    { username: "Jane Smith", message: "Let me know if you need help with the project!", imageUrl: "https://via.placeholder.com/40" },
-    { username: "Alex Johnson", message: "Just wanted to check in on how you're doing.", imageUrl: "https://via.placeholder.com/40" },
-    { username: "Emily Davis", message: "Are we still on for the meeting tomorrow?", imageUrl: "https://via.placeholder.com/40" }
+    { username: "Elon Musk", message: "Hey! How's it going?", imageUrl: "../../data/profiles/Elon.png" },
+    { username: "Mark Zukerberg", message: "Let me know if you need help with the project!", imageUrl: "../../data/profiles/Mark.png" },
+    { username: "Neal Mohan", message: "Just wanted to check in on how you're doing.", imageUrl: "../../data/profiles/Mohan.png" },
+    { username: "Sudar Pichai", message: "Are we still on for the meeting tomorrow?", imageUrl: "../../data/profiles/Sundar.png" }
   ];
 
   return (
