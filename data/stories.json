@@ -1,22 +1,56 @@
 {
-    "stories" : [
-        {
-            "img" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-        },
-        {
-            "img" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-        },
-        {
-            "img" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-        },
-        {
-            "img" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-        },
-        {
-            "img" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-        },
-        {
-            "img" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D"
-        }
-    ]
+  "stories": [
+    {
+      "username": "Sophia_Lee_Raymond12",
+      "profileImgUrl": "data/profiles/Sophia_Lee.jpg"
+    },
+    {
+      "username": "danial",
+      "profileImgUrl": "data/profiles/danial.png"
+    },
+    {
+      "username": "jah_808",
+      "profileImgUrl": "data/profiles/jah_808.png"
+    },
+    {
+      "username": "Jess_Clark",
+      "profileImgUrl": "data/pictures/graduation.jpg"
+    },
+    {
+      "username": "_Mia_Johnson_",
+      "profileImgUrl": "data/profiles/Mia_Johnson.jpg"
+    },
+    {
+      "username": "kcooper",
+      "profileImgUrl": "data/profiles/Kevin_Cooper.jpg"
+    },
+    {
+      "username": "taylor1",
+      "profileImgUrl": "data/profiles/danial.png"
+    },
+    {
+      "username": "Lena_Young",
+      "profileImgUrl": "data/profiles/Lena_Young.png"
+    },
+    {
+      "username": "Emma_Williams",
+      "profileImgUrl": "data/pictures/workout2.png"
+    },
+    {
+      "username": "Jess_Clark",
+      "profileImgUrl": "data/profiles/Jess_Clark.jpg"
+    },
+    {
+      "username": "puggle",
+      "profileImgUrl": "data/profiles/puggle.png"
+    },
+    {
+      "username": "Kevin_Cooper",
+      "profileImgUrl": "data/profiles/Kevin_Cooper.jpg"
+    },
+    {
+      "username": "Sophia_Taylor",
+      "profileImgUrl": "data/profiles/Sophia_Taylor.jpg"
+    }
+  ]
 }
