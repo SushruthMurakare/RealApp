@@ -8,11 +8,15 @@ import RealsPage from "./components/RealsPage";
 import AccountPage from "./components/AccountPage";
 import MessagePage from "./components/MessagePage";
 import viewGoal from "./functions/viewGoal";
+import NewPost from "./components/NewPost";
+import NewPostPopUpOptions from "./components/NewPostPopUp";
 
 function App() {
   const [currPage, setCurrPage] = useState(0);
   const [posts, setPosts] = useState(null);
   const [stories, setStories] = useState(null);
+  const [newPostPop, setNewPostPop] = useState(false);
+  const [typeOfPost, setTypeofPost] = useState('');
   const scrollDiv = useRef(null);
 
   // 0 = home page
@@ -42,12 +46,22 @@ function App() {
     scrollDiv.current.scrollTop = 0;
   }, [currPage]);
 
+  const newPostSelection = (type) => {
+    setTypeofPost(type)
+    setNewPostPop(!newPostPop)
+    setCurrPage(4);
+  }
+
   return (
     <div className="flex flex-col h-full overflow-hidden">
       <div
         ref={scrollDiv}
         className="flex-grow bg-gray-100 overflow-y-auto overflow-x-hidden"
       >
+        {
+          newPostPop && 
+          <NewPostPopUpOptions setValue={(type)=>{newPostSelection(type) }}/>
+        }
         {posts === null ? (
           <p className="text-center p-4">Loading...</p>
         ) : currPage === 0 ? (
@@ -58,6 +72,8 @@ function App() {
           <AccountPage setCurrPage={setCurrPage} />
         ) : currPage === 2.5 ? (
           <AccountPage setCurrPage={setCurrPage} goal />
+        ) : currPage === 4 ?(
+          <NewPost typeOfPost={typeOfPost}/>
         ) : (
           <MessagePage />
         )}
@@ -68,6 +84,9 @@ function App() {
         </div>
         <div onClick={() => setCurrPage(1)} className="h-12 w-12 p-2">
           <LightBulbIcon fill={currPage === 1} />
+        </div>
+        <div onClick={() => setNewPostPop(!newPostPop)} className="h-12 w-12 p-2">
+          <LightBulbIcon fill={currPage === 4} />
         </div>
         <div onClick={() => setCurrPage(2)} className="h-12 w-12 p-2">
           <AccountIcon fill={currPage === 2 || currPage === 2.5} />
