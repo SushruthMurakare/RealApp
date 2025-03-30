@@ -4,7 +4,7 @@ import Groq from 'groq-sdk';
 // A return value of true means that the image is okay to be uploaded, a no means that it should be rejected
 
 const groq = new Groq();
-export async function PhotoshopDetection(photoshop = true, imageUrl) {
+export async function PhotoshopDetection(photoshop, imageUrl) {
   if (photoshop) {
     const chatCompletion = await groq.chat.completions.create({
       "messages": [

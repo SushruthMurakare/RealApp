@@ -1,6 +1,6 @@
 const NewPostPopUpOptions = ({ setValue }) => {
   return (
-<div className="absolute left-1/2 bottom-13 bg-white p-2 rounded-lg shadow-lg w-40 text-center transform -translate-x-1/2">
+<div className="z-10 absolute left-1/2 bottom-13 bg-white p-2 rounded-lg shadow-lg w-40 text-center transform -translate-x-1/2">
       <ul className="space-y-2">
         {["Behind the scenes", "Truth about Trends", "Timeline", "Others"].map(
           (item) => (

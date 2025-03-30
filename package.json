@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@shadcn/ui": "^0.0.4",
+    "groq-sdk": "^0.17.0",
     "lucide-react": "^0.485.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -18,9 +19,9 @@
     "tailwindcss": "^4.0.17"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.0.17",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
-    "@tailwindcss/vite": "^4.0.17",
     "@vitejs/plugin-react": "^4.3.4",
     "globals": "^15.15.0",
     "tailwindcss": "^4.0.17",
