@@ -80,7 +80,7 @@ const PostCard = ({ post }) => {
         <p className="text-gray-800 text-sm">{post.caption}</p>
         {post.type === "regular" && (
           <div className="p-1 bg-blue-500 text-white rounded-lg mt-2 inline-block">
-            <a href="https://www.instagram.com/p/DHwCk7jRSyp/?utm_source=ig_web_copy_link">
+            <a href="https://www.instagram.com/p/DHv0RV4KjTJ/" target="_blank" rel="noopener noreferrer">
               Actual Post
             </a>
           </div>
