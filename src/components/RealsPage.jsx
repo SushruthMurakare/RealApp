@@ -62,11 +62,13 @@ export default function RealsPage() {
               <img
                 src={real.profilePicture} // Assuming API provides profilePicture
                 alt="Profile"
-                className="w-9 h-9 rounded-full border-2 border-white object-cover"
+                className="w-8 h-8 rounded-full border-2 border-white object-cover"
               />
               <div className="text-white">
                 <p className="font-semibold text-sm">{real.username}</p>
-                <p className="text-xs opacity-80">{real.description}</p>
+                <p className="text-xs opacity-80 text-ellipsis whitespace-nowrap overflow-hidden w-[80vw]">
+                  {real.description}
+                </p>
               </div>
             </div>
           </div>
