@@ -2,12 +2,12 @@
   "posts": [
     {
       "userId": 1,
+      "type": "timeline",
       "username": "Kevin_Cooper",
       "profileImage" : "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      "imageUrl": "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+      "imageUrl": "data/pictures/workout1.png",
       "caption": "The beginning of my fitness journey. It's not easy, but it's worth it. Every rep counts!",
       "realScore": 230,
-      "actualPost" :true,
       "userProfileUrl": "data/profiles/Kevin_Cooper.jpg",
       "comments": [
         {
@@ -22,11 +22,11 @@
     },
     {
       "userId": 4,
+      "type": "regular",
       "username": "Lena_Young",
       "imageUrl": "data/postImages/friendship.jpg",
       "caption": "I'm so thankful for my very best friends. We’ve been through thick and thin together, and I couldn’t imagine life without them. #FriendshipGoals",
       "realScore": 500,
-      "actualPost" :true,
       "userProfileUrl": "data/profiles/Lena_Young.jpg",
       "comments": [
         {
@@ -41,11 +41,11 @@
     },
     {
       "userId": 3,
+      "type": "regular",
       "username": "Sophia_Lee",
       "imageUrl": "data/picture/moving.jpg",
       "caption": "After months of negotiations, inspections, and paperwork, We've finally closed on our first home! 🏡✨ I can't wait for our little girl to grow up here! #HomeSweetHome",
       "realScore": 450,
-      "actualPost" :true,
       "userProfileUrl": "data/profiles/Sophia_Lee.jpg",
       "comments": [
         {
@@ -64,7 +64,6 @@
       "imageUrl": "data/pictures/job_search.jpeg",
       "caption": "After almost 4 months of searching, I finally landed my dream job! 🎉 It's been a long process and I wanted to share a few things that helped me through my journey.",
       "realScore": 320,
-      "actualPost" :true,
       "userProfileUrl": "data/profiles/Oliver_Brown.jpg",
       "comments": [
         {
@@ -83,7 +82,6 @@
       "imageUrl": "https://via.placeholder.com/300x300?text=Weight+Loss+Journey",
       "caption": "Started my weight loss journey last year, and it’s been a rollercoaster. Small steps every day make a huge difference. #TransformationTuesday",
       "realScore": 350,
-      "actualPost" :true,
       "userProfileUrl": "data/profiles/Emma_Williams.jpg",
       "comments": [
         {
@@ -98,11 +96,11 @@
     },
     {
       "userId": 5,
+      "type": "regular",
       "username": "Mia_Johnson",
       "imageUrl": "https://via.placeholder.com/300x300?text=New+Car+Journey",
       "caption": "From dreaming to reality – the journey of buying my first car. It took hard work, sacrifice, and persistence, but I did it! 🚗💨 #DreamCar",
       "realScore": 380,
-      "actualPost" :false,
       "userProfileUrl": "data/profiles/Mia_Johnson.jpg",
       "comments": [
         {
@@ -117,11 +115,11 @@
     },
     {
       "userId": 6,
+      "type": "regular",
       "username": "Claire_Smith",
       "imageUrl": "https://via.placeholder.com/300x300?text=Weight+Loss+Transformation",
       "caption": "Transformation isn’t just physical; it’s mental too. I’ve changed my mindset as much as my body. It’s about becoming the best version of myself. #MindOverMatter",
       "realScore": 400,
-      "actualPost" :false,
       "userProfileUrl": "data/profiles/Claire_Smith.jpg",
       "comments": [
         {
@@ -136,11 +134,11 @@
     },
     {
       "userId": 8,
+      "type": "regular",
       "username": "Sophia_Taylor",
       "imageUrl": "https://via.placeholder.com/300x300?text=Graduation+Journey",
       "caption": "Graduation day! The hard work, the late nights, and all the sacrifices were so worth it. Here’s to new adventures and the future! 🎓 #GraduationVibes",
       "realScore": 550,
-      "actualPost" :true,
       "userProfileUrl": "data/profiles/Sophia_Taylor.jpg",
       "comments": [
         {
@@ -155,11 +153,11 @@
     },
     {
       "userId": 9,
+      "type": "regular",
       "username": "Henry_Davis",
       "imageUrl": "https://via.placeholder.com/300x300?text=Fitness+Transformation",
       "caption": "This fitness journey has been a battle, but every drop of sweat has been worth it. It’s not about perfection, it’s about progress! #NeverGiveUp",
       "realScore": 390,
-      "actualPost" :false,
       "userProfileUrl": "data/profiles/Henry_Davis.jpg",
       "comments": [
         {
@@ -170,11 +168,11 @@
     },
     {
       "userId": 10,
+      "type": "regular",
       "username": "Lily_Clark",
       "imageUrl": "https://via.placeholder.com/300x300?text=Travels+and+Adventures",
       "caption": "Every trip, every adventure, has taught me something new. Life is all about making memories, so get out there and explore the world! 🌍 #Wanderlust",
       "realScore": 450,
-      "actualPost" :false,
       "userProfileUrl": "data/profiles/Lily_Clark.jpg",
       "comments": [
         {

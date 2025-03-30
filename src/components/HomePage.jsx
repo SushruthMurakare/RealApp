@@ -1,12 +1,11 @@
 import PostCard from "./PostCard";
 
 export default function HomePage({ posts, stories }) {
-  console.log("Home", stories);
   return (
-    <div className="flex flex-wrap gap-4 p-4">
-      {stories?.stories?.map((story) => {
+    <div className="flex flex-wrap gap-3 p-2">
+      {stories?.stories?.map((story, i) => {
         return (
-          <div>
+          <div key={i}>
             <img
               src={story.img}
               alt="Circle Image"
