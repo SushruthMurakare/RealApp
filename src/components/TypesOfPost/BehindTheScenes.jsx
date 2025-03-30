@@ -2,7 +2,7 @@ import { useState, onChange } from "react";
 import { PhotoshopDetection } from "../PhotoshopDetection";
 // import fs from "fs";
 // import path from "path";
-const BehindTheScenes = ({typeOfPost}) => {
+const BehindTheScenes = ({typeOfPost, addPost}) => {
 const [actualPostUrl, setPostUrl] = useState("");
 const [description, setDescription] = useState("");
 const [image, setImage] = useState("");
@@ -16,7 +16,8 @@ const handlePostCreation = () => {
   console.log("Description:", description);
   console.log("Image (Base64):", base64Image);
   console.log("Tagged People:", taggedPeople);
-
+  console.log({actualPostUrl,description, image, taggedPeople })
+  addPost({userProfileUrl: 'data/pictures/friendship.jpg', type: '', username: 'Lena_Young', instaLink: actualPostUrl, caption: description, imageUrl: `data/pictures/${image.name}`, userProfileUrl : `data/pictures/${image.name}`,  userId : 1, realScore: 0, comments :[{},{},{}]})
   createPost(actualPostUrl, description, base64Image, taggedPeople);
 };
 

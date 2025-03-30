@@ -4,11 +4,11 @@ import TruthAboutTrends from "./TypesOfPost/TruthAboutTrends";
 import Timeline from "./TypesOfPost/Timeline";
 import NewPostScreen from "./TypesOfPost/NewPost";
 
-const NewPost = ({ typeOfPost }) => {
+const NewPost = ({ typeOfPost, addPost }) => {
   return (
     <>
       {typeOfPost === "Behind the scenes" ? (
-        <BehindTheScenes typeOfPost={typeOfPost} />
+        <BehindTheScenes typeOfPost={typeOfPost} addPost={(post) => {addPost(post)} }/>
       ) : typeOfPost === "Truth about Trends" ? (
         <TruthAboutTrends typeOfPost={typeOfPost} />
       ) : typeOfPost === "Timeline" ? (

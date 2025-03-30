@@ -82,7 +82,7 @@ function App() {
         ) : currPage === 2.5 ? (
           <AccountPage setCurrPage={setCurrPage} goal />
         ) : currPage === 4 ? (
-          <NewPost typeOfPost={typeOfPost} />
+          <NewPost typeOfPost={typeOfPost} addPost={(post) => {console.log("-==-=",post, posts) ; posts.posts.unshift(post)}}/>
         ) : (
           <MessagePage />
         )}
