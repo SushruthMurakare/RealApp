@@ -81,6 +81,34 @@
       ]
     },
     {
+      "userId": 10,
+      "type": "regular",
+      "username": "Luisa_Yu",
+      "imageUrl": "data/pictures/travel.jpg",
+      "caption": "Traveling to every country in the world has been the center of my life since I was a kid. Every trip, every adventure, has taught me something new. Life is all about making memories, so get out there and explore the world! 🌍 #Wanderlust",
+      "realScore": 450,
+      "userProfileUrl": "data/profiles/Luisa_Yu.png",
+      "instaLink": "https://www.instagram.com/p/CzcCGFJL36p/",
+      "comments": [
+        {
+          "commenter": "Lily",
+          "comment": "Love this! Every trip teaches us something about ourselves 🌏"
+        },
+        {
+          "commenter": "Sophia",
+          "comment": "I can’t wait to start my own adventure soon! ✈️"
+        },
+        {
+          "commenter": "Emma",
+          "comment": "Traveling is the best way to learn about the world! 🌎"
+        },
+        {
+          "commenter": "Tom",
+          "comment": "So true! Every adventure is a new chapter in our lives! 📖"
+        }
+      ]
+    },
+    {
       "userId": 8,
       "type": "regular",
       "username": "Sophia_Taylor",
@@ -109,34 +137,6 @@
         {
           "commenter": "Tom",
           "comment": "You’re going to do amazing things! Keep shining! 🌟"
-        }
-      ]
-    },
-    {
-      "userId": 10,
-      "type": "regular",
-      "username": "Luisa_Yu",
-      "imageUrl": "data/pictures/travel.jpg",
-      "caption": "Traveling to every country in the world has been the center of my life since I was a kid. Every trip, every adventure, has taught me something new. Life is all about making memories, so get out there and explore the world! 🌍 #Wanderlust",
-      "realScore": 450,
-      "userProfileUrl": "data/profiles/Luisa_Yu.png",
-      "instaLink": "https://www.instagram.com/p/CzcCGFJL36p/",
-      "comments": [
-        {
-          "commenter": "Lily",
-          "comment": "Love this! Every trip teaches us something about ourselves 🌏"
-        },
-        {
-          "commenter": "Sophia",
-          "comment": "I can’t wait to start my own adventure soon! ✈️"
-        },
-        {
-          "commenter": "Emma",
-          "comment": "Traveling is the best way to learn about the world! 🌎"
-        },
-        {
-          "commenter": "Tom",
-          "comment": "So true! Every adventure is a new chapter in our lives! 📖"
         }
       ]
     },
